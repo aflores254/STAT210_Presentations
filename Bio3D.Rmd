@@ -1,0 +1,20 @@
+---
+title: "Bio3D"
+author: "Armando F"
+date: "10/15/2019"
+output: html_document
+---
+
+```{r}
+#install.packages("bio3d")
+library(bio3d) #loads the Bio3D package at the R console prompt
+```
+
+```{r}
+pdb <- read.pdb("4q21") #reads in PDB file and saves as an object "pdb"
+##   Note: Accessing on-line PDB file
+pdb #prints file onto screen
+```
+```{r}
+pdb$atom
+```

@@ -1,0 +1,27 @@
+---
+title: "BCRA_Exercise"
+author: "Armando F"
+date: "10/15/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+#The line of code below will install the BCRA package (uncomment line to do so and only install once)
+#install.packages("BCRA")
+library("BCRA")
+```
+
+```{r Exercise}
+# loads data set (using bulit in data)
+data(exampledata)
+# will show the first few lines of the data set
+head(exampledata)
+# calculate absolute risk
+absolute.risk(exampledata)
+# calculate average absolute risk
+absolute.risk(exampledata, Raw_Ind=1, Avg_White = 1)
+#calculate relative risk
+relative.risk(exampledata, Raw_Ind=1)
+
+```
+

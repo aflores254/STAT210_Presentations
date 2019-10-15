@@ -1,0 +1,25 @@
+---
+title: "Colourpicker"
+author: "Armando F"
+date: "10/15/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+#install.packages("colourpicker")
+library(colourpicker)
+library(shiny)
+
+if (interactive()) {
+runExample("01_hello")
+}
+```
+
+```{r}
+colourInput(inputId, label, value = color, showColour = c("both", "text", "background"), palette = c("square", "limited"), allowedCols = NULL, allowTransparent = FALSE, returnName = FALSE)
+
+if(interactive()) {
+cols <-colourPicker()
+}
+```
+
